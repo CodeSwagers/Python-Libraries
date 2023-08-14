@@ -9,6 +9,10 @@ class Person(Model):
 new_person = Person(name="John Doe", age=30)
 new_person.save()
 
+# Create a new person
+new_person_1 = Person(name="John", age=32)
+new_person_1.save()
+
 # Query persons older than 25
 query_result = Person.collection.filter("age", ">", 25).fetch()
 
